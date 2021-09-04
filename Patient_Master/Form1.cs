@@ -36,7 +36,7 @@ namespace Patient_Master
         {
             clsScrapper cScrapper = new clsScrapper();
             Console.Write(Assembly.GetExecutingAssembly().Location);
-            cScrapper.ScrapData(Application.ExecutablePath, "https://patents.google.com/patent/US20200088579?oq=patent:US20200088579","123.png");
+            clsMap oMap=  cScrapper.ScrapData(Application.ExecutablePath, "https://patents.google.com/patent/US20200088579?oq=patent:US20200088579","123.png");
             Excel.Workbook wk=null;
             Excel.Worksheet sh=null;
             try
